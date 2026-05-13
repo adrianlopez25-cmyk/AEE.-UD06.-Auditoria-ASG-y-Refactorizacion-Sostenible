@@ -1,14 +1,6 @@
-## Auditoría ASG y Refactorización Sostenible
-# Indice
+# Auditoría ASG y Refactorización Sostenible
 
-¡Entendido! Para que solo tengas que copiar y pegar directamente en tu archivo README.md, aquí tienes el código en formato Markdown puro.
-
-He añadido los anclajes internos (los enlaces en el índice) para que, al hacer clic, el usuario salte directamente a la sección correspondiente.
-
-Markdown
-# 📑 Auditoría de Sostenibilidad y Dimensiones ASG
-
-## 📌 Índice de Contenidos
+## Indice
 1. [Fase 1: Inventario y Dimensión Ambiental (A)](#fase-1-inventario-y-dimensión-ambiental-a)
 2. [Fase 2: Dimensión Social y Equidad (S)](#fase-2-dimensión-social-y-equidad-s)
 3. [Fase 3: Dimensión de Gobernanza y Ética (G)](#fase-3-dimensión-de-gobernanza-y-ética-g)
