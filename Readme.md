@@ -28,6 +28,7 @@ Segun la imagen, observamos que de media solo llega al 50% es bastante bajo, eso
 Todo esto nos hace ver que nuestra web aun le queda mucho margen de mejora ya que lo mas optimo seria llegar al 90%.
 
 <img width="564" height="929" alt="image" src="https://github.com/user-attachments/assets/59d31c9d-746f-4ec6-9b3d-490208f55647" />
+
 Los tres archivos mas pesados de la web son img-2,img-1,img, algo que es bastante obvio ya que las tres imagenes se encuentran el formato JPG ya que este formato requiere mucho recursos, un formato menos pesado como tipo WebP, haria trabajar menos al dispositivo del usuarios, pero esto ya lo tratare mas adelante.
 
 
@@ -42,6 +43,14 @@ Desbalance entre funcionalidad y peso: como hemos analizado en la imagen, se emp
 
 ## Fase 2: Dimensión Social y Equidad (S)
 ### 2.1 Test de Accesibilidad
+<img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/c51dd693-ae9b-4829-a874-1e8dab788521" />
+
+El panel muestra un AIM Score de 3.7 sobre 10. Es una puntuación baja. Significa que la página tiene bastantes barreras de accesibilidad que podrían excluir a usuarios con discapacidad o con algun tipo de dificultad. Algunos de los problemas de esto serian:
+- Hay imágenes que no tienen una descripción en texto. Las personas ciegas usan "lectores de pantalla" que leen lo que hay en la web, en este caso no podrian saber que hay ahi.
+- Hay una imagen que además funciona como enlace no tiene descripción, es decir el usuario al clikear ahi no sabra a donde le llevara este link.
+- Tambien existe errores de contraste, es decir, existe texto cuyo color es muy parecido al del fondo.
+
+Pero no todo es malo, lo mas destacable de la web es el buen uso de etiquetas de lenguaje o una estructura de encabezados que ayuda a organizar el contenido.
 
 
 ### 2.2 Identificación de barreras de acceso
