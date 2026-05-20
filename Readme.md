@@ -79,6 +79,26 @@ Como se ve en la imagen del punto 1.2 Identificación de Bloatware, observe que 
 problemas de la web donde mas se utilizan los recursos es que el mayor peso de la web son las imagenes que estan en formato png por lo que una de las mejores opciones seria cambiar esto a formato wepb para que pida menos recursos
 
 ### 4.2 Reducción de peticiones y procesamiento
+<img width="1898" height="964" alt="image" src="https://github.com/user-attachments/assets/fc683e67-c998-42a4-b0ef-465a1ed79c4d" />
+
+Como se puede observar segun el buscador, el bloque @font-face aparece mas de 160 veces, repitiendo una y otra vez fuentes optimizadas para diferentes User Agents antiguos ( como son Open Sans, Lato,Montserrat que estan adaptados a user agents antiguos como lo serian firefox27, firefox39,safari de daum...etc).
+
+<img width="995" height="503" alt="image" src="https://github.com/user-attachments/assets/2755641b-91a5-41e1-b7cf-ad41956d1a34" />
+
+También se observa que el uso de bloques para Firefox 27/39 o formatos como .woff se siguen empleando pese a que hoy en día, en pleno 2026, ya no son necesarios. En la actualidad, el más utilizado es el formato WOFF2, que se emplea en más del 98% de los casos.
+
+Con todo esto presente, me pregunto: ¿qué podría mejorar? Esto me lleva a diferentes puntos:
+
+Eliminar variantes de fuentes no utilizadas: el código contiene pesos desde el 100 hasta el 900 en formato normal e itálica para cuatro familias distintas. No es necesario en absoluto utilizar tantas variantes, por lo que reduciría esta cantidad de fuentes.
+
+Aplazar scripts de Divi y WordPress: existen archivos como xmlrpc.php que ya están obsoletos y presentan problemas de seguridad. Por ello, lo mejor es deshabilitarlos.
 
 
 ### 4.3 Reflexión sobre la Paradoja de Jevons
+Para poder evitar que el éxito anule el ahorro enérgetico lo principal es abordar los siguientes puntos:
+
+1. Arquitectura Jamstack / Generación Estática (SSG): En lugar de que cada nuevo usuario active una consulta a la base de datos PHP de WordPress (consumiendo CPU del servidor), se pre-renderiza la web en HTML estático. El coste energético de servir un archivo plano es infinitamente menor.
+
+2. Caché agresiva en el Edge (CDNs Verdes): Utilizar proveedores como Cloudflare con centros de datos alimentados por energía 100% renovable. Si el 95% de las peticiones se resuelven en la caché del nodo más cercano al usuario, se evita el tráfico innecesario por las redes troncales de internet.
+
+3. Green Web Hosting: Alojar la infraestructura en servidores que certifiquen el uso de energía limpia (PUE < 1.2) o compensación de carbono real. Como por ejemplo como hemos visto en clase seria GreenGeeks, la cual por cada kilovatio hora empleado, devlven tres veces esa cantidad a la red en forma de energía eólica.
