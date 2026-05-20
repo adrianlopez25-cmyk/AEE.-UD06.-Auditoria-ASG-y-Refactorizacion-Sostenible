@@ -67,6 +67,8 @@ Tiene total transparencia, puedes aceptar o rechazar todas las cookies sin oblig
 ### 3.2 Análisis de datos innecesarios
 Piden los datos extricatamente necesarios por si te quieres contactar con ellos como son nombre, telefono, email y que deseas conocer. Tambien cuenta con un CAPTCHA para que no sea un bot el que lo realize de forma automatica y sature la web.
 
+<img width="809" height="643" alt="image" src="https://github.com/user-attachments/assets/1404164f-3c3e-4d1f-a609-7402e9f036cf" />
+
 
 ---
 
