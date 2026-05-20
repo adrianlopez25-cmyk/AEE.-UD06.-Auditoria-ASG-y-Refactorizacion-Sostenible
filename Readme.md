@@ -55,14 +55,17 @@ Pero no todo es malo, lo mas destacable de la web es el buen uso de etiquetas de
 
 ### 2.2 Identificación de barreras de acceso
 
+Como he comentado anteriormente, el principal problema para personas con discapacidad sera el no tener descripciones en los textos, lo que impide a las personas ciegas conocer que existe esa imagen.
 
+Como segundo problema es que utiliza colores muy similares lo que personas daltonicas tendrian problema con ellos
 ---
 
 ## Fase 3: Dimensión de Gobernanza y Ética (G)
 ### 3.1 Transparencia y Patrones Oscuros (Dark Patterns)
-
+Tiene total transparencia, puedes aceptar o rechazar todas las cookies sin obligar al usuario a aceptarlas, una vez haces click en que no la aceptas no te vuelven a preguntar mas.
 
 ### 3.2 Análisis de datos innecesarios
+Piden los datos extricatamente necesarios por si te quieres contactar con ellos como son nombre, telefono, email y que deseas conocer. Tambien cuenta con un CAPTCHA para que no sea un bot el que lo realize de forma automatica y sature la web.
 
 
 ---
