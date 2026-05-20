@@ -69,7 +69,6 @@ Piden los datos extricatamente necesarios por si te quieres contactar con ellos 
 
 <img width="809" height="643" alt="image" src="https://github.com/user-attachments/assets/1404164f-3c3e-4d1f-a609-7402e9f036cf" />
 
-<img width="995" height="503" alt="image" src="https://github.com/user-attachments/assets/5b81492a-9fe4-4bbf-b34b-da4fd2d6009e" />
 
 ---
 
@@ -82,6 +81,9 @@ problemas de la web donde mas se utilizan los recursos es que el mayor peso de l
 ### 4.2 Reducción de peticiones y procesamiento
 <img width="1898" height="964" alt="image" src="https://github.com/user-attachments/assets/fc683e67-c998-42a4-b0ef-465a1ed79c4d" />
 
+
+
+<img width="995" height="503" alt="image" src="https://github.com/user-attachments/assets/2755641b-91a5-41e1-b7cf-ad41956d1a34" />
 
 
 
