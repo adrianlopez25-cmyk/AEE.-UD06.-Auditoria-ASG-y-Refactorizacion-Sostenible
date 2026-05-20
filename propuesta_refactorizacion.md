@@ -134,6 +134,7 @@ Esta seria mi propuesta de la parte del codigo ya refactorizada:
 
 </body>
 </html>
+```
 
 ## 6. Plan de Validación y Herramientas
 
