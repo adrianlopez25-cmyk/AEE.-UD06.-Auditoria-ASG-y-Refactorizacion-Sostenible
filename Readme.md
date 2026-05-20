@@ -72,7 +72,7 @@ Piden los datos extricatamente necesarios por si te quieres contactar con ellos 
 
 ## Fase 4: Propuesta de Refactorización (Green Coding)
 ### 4.1 Optimización de activos (Assets)
-
+    Como se ve en la imagen del punto 1.2 Identificación de Bloatware, observe que uno de los principales problemas de la web donde mas se utilizan los recursos es que el mayor peso de la web son las imagenes que estan en formato png por lo que una de las mejores opciones seria cambiar esto a formato wepb para que pida menos recursos
 
 ### 4.2 Reducción de peticiones y procesamiento
 
