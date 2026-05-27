@@ -57,8 +57,7 @@ Garantizar la transparencia, la privacidad de los datos del usuario y el cumplim
 
 ## 5. Propuesta Técnica: Comparativa Código "Antes vs. Después"
 
-### Código Original (Involutivo e Ineficiente)
-
+### Bloque 1: Estructura, Tipografías y Semántica
 ```html
 <html lang="es-ES">
 <head>
@@ -86,7 +85,7 @@ Garantizar la transparencia, la privacidad de los datos del usuario y el cumplim
     </div>
 </body>
 </html>
-Esta seria mi propuesta de la parte del codigo ya refactorizada:
+### Esta seria mi propuesta de la parte del codigo ya refactorizada:
 
 <!DOCTYPE html>
 <html lang="es-ES">
