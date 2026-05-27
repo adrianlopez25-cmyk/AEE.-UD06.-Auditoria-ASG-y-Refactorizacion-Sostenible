@@ -134,10 +134,10 @@ Garantizar la transparencia, la privacidad de los datos del usuario y el cumplim
 </body>
 </html>
 ```
+### Bloque 2: Optimización de Media (Imágenes Next-Gen)
 <img width="1771" height="159" alt="mejora fotos" src="https://github.com/user-attachments/assets/a0e5084f-e7c9-412d-a3ec-5c6be949ca32" />
+Antes: Los archivos call4.jpg y call2.jpg emplean formatos heredados pesados (JPEG de $1920 \times 1080\text{px}$) sin compresión estructural adaptativa.
 
-Problema principal: formato JPG sin modernizar
-Los archivos call4.jpg y call2.jpg son imágenes de 1920×1080px en JPG, cargadas con lazy load correctamente, pero con dos problemas sin resolver:
 ```
 html<!-- Antes -->
 <img data-src="call4.jpg" ...>
@@ -150,6 +150,7 @@ html<!-- Antes -->
 
 <img width="1452" height="868" alt="adaptabilidad_web" src="https://github.com/user-attachments/assets/718875c5-ef5d-4a36-ba18-54e4cf836181" />
 ```
+Después de la implementación del formato de última generación WebP/AVIF embebido en elementos <picture>, reduciendo drásticamente el peso del payload transferido.
 
 ### Bloque 3: Privacidad y Gobernanza de Scripts (Carga de Terceros)
 ```Antes:
