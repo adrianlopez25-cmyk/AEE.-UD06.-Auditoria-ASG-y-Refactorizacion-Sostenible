@@ -148,6 +148,7 @@ html<!-- Antes -->
   <img loading="lazy" src="call4.jpg" alt="Descripción real del equipo de trabajo">
 
 <img width="1452" height="868" alt="adaptabilidad_web" src="https://github.com/user-attachments/assets/718875c5-ef5d-4a36-ba18-54e4cf836181" />
+
 ### Bloque 3: Privacidad y Gobernanza de Scripts (Carga de Terceros)
 Antes:
 <!-- Esto dispara cookies de seguimiento sin consentimiento -->
