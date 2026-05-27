@@ -153,6 +153,7 @@ html<!-- Antes -->
 
 <img width="1452" height="868" alt="adaptabilidad_web" src="https://github.com/user-attachments/assets/718875c5-ef5d-4a36-ba18-54e4cf836181" />
 ```
+
 Después de la implementación del formato de última generación WebP/AVIF embebido en elementos <picture>, reduciendo drásticamente el peso del payload transferido.
 
 ### Bloque 3: Privacidad y Gobernanza de Scripts (Carga de Terceros)
