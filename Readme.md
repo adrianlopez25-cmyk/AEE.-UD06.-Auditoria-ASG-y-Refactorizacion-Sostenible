@@ -29,7 +29,7 @@ Todo esto nos hace ver que nuestra web aun le queda mucho margen de mejora ya qu
 
 <img width="564" height="929" alt="image" src="https://github.com/user-attachments/assets/59d31c9d-746f-4ec6-9b3d-490208f55647" />
 
-Los tres archivos mas pesados de la web son img-2,img-1,img, algo que es bastante obvio ya que las tres imagenes se encuentran el formato JPG ya que este formato requiere mucho recursos, un formato menos pesado como tipo WebP, haria trabajar menos al dispositivo del usuarios, pero esto ya lo tratare mas adelante.
+Los tres archivos mas pesados de la web son img-2,img-1,img, algo que es bastante obvio ya que las tres imagenes se encuentran el formato png ya que este formato requiere mucho recursos, un formato menos pesado como tipo WebP, haria trabajar menos al dispositivo del usuarios, pero esto ya lo tratare mas adelante.
 
 
 ### 1.3 Análisis de "Inflación de Software"
@@ -37,7 +37,7 @@ Obviamente si, ya que la puntuación de 50 en Performance indica que el navegado
 
 Consumo de recursos en reposo: La calificación D en Website Carbon confirma que la web es más pesada que la media eficiente. Esto es un síntoma clásico de la inflación: se utilizan frameworks o librerías completas, lo que facilita el trabajo del desarrollador, pero no tiene tan en cuenta el hardware del usuario
 
-Desbalance entre funcionalidad y peso: como hemos analizado en la imagen, se emplean imagenes en formato jpg que son muy pesadas y ralentizan mucho la web además de que tardan mas en cargar sobre todo en dispositivos menos actuales.
+Desbalance entre funcionalidad y peso: como hemos analizado en la imagen, se emplean imagenes en formato png que son muy pesadas y ralentizan mucho la web además de que tardan mas en cargar sobre todo en dispositivos menos actuales.
 
 ---
 
@@ -58,6 +58,7 @@ Pero no todo es malo, lo mas destacable de la web es el buen uso de etiquetas de
 Como he comentado anteriormente, el principal problema para personas con discapacidad sera el no tener descripciones en los textos, lo que impide a las personas ciegas conocer que existe esa imagen.
 
 Como segundo problema es que utiliza colores muy similares lo que personas daltonicas tendrian problema con ellos
+
 ---
 
 ## Fase 3: Dimensión de Gobernanza y Ética (G)
@@ -65,10 +66,19 @@ Como segundo problema es que utiliza colores muy similares lo que personas dalto
 Tiene total transparencia, puedes aceptar o rechazar todas las cookies sin obligar al usuario a aceptarlas, una vez haces click en que no la aceptas no te vuelven a preguntar mas.
 
 ### 3.2 Análisis de datos innecesarios
-Piden los datos extricatamente necesarios por si te quieres contactar con ellos como son nombre, telefono, email y que deseas conocer. Tambien cuenta con un CAPTCHA para que no sea un bot el que lo realize de forma automatica y sature la web.
+<img width="1237" height="221" alt="image" src="https://github.com/user-attachments/assets/b78109b0-0524-4d83-a1d4-a92f6f76e845" />
 
-<img width="809" height="643" alt="image" src="https://github.com/user-attachments/assets/1404164f-3c3e-4d1f-a609-7402e9f036cf" />
+La web carga fuentes tipográficas directamente desde fonts.gstatic.com (servidores de Google) en el <head>, antes de que el usuario haya aceptado ninguna cookie. Esto transmite la dirección IP del visitante a Google sin consentimiento previo, incumpliendo el artículo 5 del RGPD. 
 
+La solución es alojar las fuentes en el propio servidor (self-hosted fonts). Todo esto lo meteriamos en un nuevo CSS y eliminariamos los styles.
+<img width="734" height="920" alt="image" src="https://github.com/user-attachments/assets/c480cd93-2cfe-4fe1-bf02-6bb2d1319c7f" />
+Si solo añadimos el código anterior, Divi seguirá llamando a Google en paralelo. Para cortar la conexión con Google por completo, añade esta función al archivo functions.php de tu tema hijo:
+// Para desactivar por completo necesitariamos añadir lo siguiente:
+    function dc_remove_divi_google_fonts() {
+    wp_dequeue_style('et-builder-googlefonts');
+    wp_dequeue_style('et-builder-googlefonts-cached');
+}
+add_action('wp_enqueue_scripts', 'dc_remove_divi_google_fonts', 20);
 
 ---
 
