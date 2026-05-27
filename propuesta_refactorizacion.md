@@ -139,7 +139,6 @@ Esta seria mi propuesta de la parte del codigo ya refactorizada:
 
 Problema principal: formato JPG sin modernizar
 Los archivos call4.jpg y call2.jpg son imágenes de 1920×1080px en JPG, cargadas con lazy load correctamente, pero con dos problemas sin resolver:
-1. Formato obsoleto — deberían ser WebP o AVIF:
 html<!-- Antes -->
 <img data-src="call4.jpg" ...>
 
@@ -150,7 +149,7 @@ html<!-- Antes -->
   <img loading="lazy" src="call4.jpg" alt="Descripción real del equipo de trabajo">
 
 <img width="1452" height="868" alt="adaptabilidad_web" src="https://github.com/user-attachments/assets/718875c5-ef5d-4a36-ba18-54e4cf836181" />
-
+### Bloque 3: Privacidad y Gobernanza de Scripts (Carga de Terceros)
 Antes:
 <!-- Esto dispara cookies de seguimiento sin consentimiento -->
 <script type='text/javascript'>
