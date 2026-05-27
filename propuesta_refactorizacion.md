@@ -137,6 +137,10 @@ html
 </body>
 </html>
 ```
+* **Fuentes optimizadas: He cambiado el formato .ttf antiguo por .woff2, que está supercomprimido y pesa poquísimo. Además, le he metido font-display: swap para que el texto se lea al instante y la pantalla no se quede en blanco esperando a Google Fonts.
+
+* **Limpieza de código muerto: He borrado cientos de líneas de CSS que estaban ahí para dar soporte a navegadores prehistóricos (como Firefox 27 o 39). 
+
 ### Bloque 2: Optimización de Media (Imágenes Next-Gen)
 ```
 Antes:
