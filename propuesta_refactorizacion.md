@@ -138,9 +138,18 @@ html
 </html>
 ```
 ### Bloque 2: Optimización de Media (Imágenes Next-Gen)
-<img width="1771" height="159" alt="mejora fotos" src="https://github.com/user-attachments/assets/a0e5084f-e7c9-412d-a3ec-5c6be949ca32" />
+```
+Antes:
+</a>
+</div></div><div class="et_pb_gallery_item et_pb_bg_layout_dark et_pb_gallery_item_0_6"><div class="et_pb_gallery_image landscape">
+    <a href="https://www.mkpersons.com/dev/wp-content/uploads/2021/02/call4.jpg" title="call4">
+    <img loading="lazy" decoding="async" width="1920" height="1080" data-src="https://www.mkpersons.com/dev/wp-content/uploads/2021/02/call4.jpg" class="wp-image-2424 lazyload" data-srcset="https://www.mkpersons.com/dev/wp-content/uploads/2021/0...
+</a>
+</div></div><div class="et_pb_gallery_item et_pb_bg_layout_dark et_pb_gallery_item_0_7"><div class="et_pb_gallery_image landscape">
+    <a href="https://www.mkpersons.com/dev/wp-content/uploads/2021/02/call2.jpg" title="call2">
+    <img loading="lazy" decoding="async" width="1920" height="1080" data-src="https://www.mkpersons.com/dev/wp-content/uploads/2021/02/call2.jpg" class="wp-image-2423 lazyload" data-srcset="https://www.mkpersons.com/dev/wp-content/uploads/2021/0...
+```
 Antes: Los archivos call4.jpg y call2.jpg emplean formatos heredados pesados (JPEG de $1920 \times 1080\text{px}$) sin compresión estructural adaptativa.
-
 ```
 html<!-- Antes -->
 <img data-src="call4.jpg" ...>
