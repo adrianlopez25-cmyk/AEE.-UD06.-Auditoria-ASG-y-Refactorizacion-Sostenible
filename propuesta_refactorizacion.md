@@ -58,7 +58,9 @@ Garantizar la transparencia, la privacidad de los datos del usuario y el cumplim
 ## 5. Propuesta Técnica: Comparativa Código "Antes vs. Después"
 
 ### Bloque 1: Estructura, Tipografías y Semántica
-```html
+```
+---Antes:
+html
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8" />
@@ -85,7 +87,8 @@ Garantizar la transparencia, la privacidad de los datos del usuario y el cumplim
     </div>
 </body>
 </html>
-### Esta seria mi propuesta de la parte del codigo ya refactorizada:
+
+---Esta seria mi propuesta de la parte del codigo ya refactorizada:
 
 <!DOCTYPE html>
 <html lang="es-ES">
@@ -153,13 +156,14 @@ html<!-- Antes -->
 Después de la implementación del formato de última generación WebP/AVIF embebido en elementos <picture>, reduciendo drásticamente el peso del payload transferido.
 
 ### Bloque 3: Privacidad y Gobernanza de Scripts (Carga de Terceros)
-```Antes:
+```
+---Antes:
 <!-- Esto dispara cookies de seguimiento sin consentimiento -->
 <script type='text/javascript'>
   !function(f,b,e,v...){ fbq... }
 </script>
 
-Despues:
+---Despues:
 <script type="text/plain" data-cookiecategory="marketing">
   // código del pixel aquí
 </script>
