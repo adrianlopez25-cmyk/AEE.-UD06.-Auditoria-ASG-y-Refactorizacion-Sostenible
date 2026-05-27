@@ -135,6 +135,34 @@ Esta seria mi propuesta de la parte del codigo ya refactorizada:
 </body>
 </html>
 ```
+<img width="1771" height="159" alt="mejora fotos" src="https://github.com/user-attachments/assets/a0e5084f-e7c9-412d-a3ec-5c6be949ca32" />
+
+Problema principal: formato JPG sin modernizar
+Los archivos call4.jpg y call2.jpg son imágenes de 1920×1080px en JPG, cargadas con lazy load correctamente, pero con dos problemas sin resolver:
+1. Formato obsoleto — deberían ser WebP o AVIF:
+html<!-- Antes -->
+<img data-src="call4.jpg" ...>
+
+<!-- Después -->
+<picture>
+  <source srcset="call4.avif" type="image/avif">
+  <source srcset="call4.webp" type="image/webp">
+  <img loading="lazy" src="call4.jpg" alt="Descripción real del equipo de trabajo">
+
+<img width="1452" height="868" alt="adaptabilidad_web" src="https://github.com/user-attachments/assets/718875c5-ef5d-4a36-ba18-54e4cf836181" />
+
+Antes:
+<!-- Esto dispara cookies de seguimiento sin consentimiento -->
+<script type='text/javascript'>
+  !function(f,b,e,v...){ fbq... }
+</script>
+
+Despues:
+<script type="text/plain" data-cookiecategory="marketing">
+  // código del pixel aquí
+</script>
+
+Antes: El navegador ejecuta fbevents.js en el momento que carga la página. Facebook recibe la IP del visitante, su User-Agent y la URL visitada sin que haya dado ningún consentimiento. Esto es una transferencia de datos a un tercero fuera de la UE sin base legal.Después: El script tiene type="text/plain", lo que significa que el navegador lo ignora completamente. No se ejecuta, no hace peticiones, no transfiere datos. Solo cuando el CMP registra que el usuario ha aceptado la categoría "marketing", cambia el tipo a text/javascript y entonces sí se ejecuta.La diferencia ante la AEPD es total: de infracción activa a cumplimiento demostrable.
 
 ## 6. Plan de Validación y Herramientas
 
